@@ -37,6 +37,7 @@
             button4 = new Button();
             button5 = new Button();
             textBox1 = new TextBox();
+            exit_btn = new Button();
             SuspendLayout();
             // 
             // button2
@@ -118,7 +119,7 @@
             textBox1.Cursor = Cursors.No;
             textBox1.Font = new Font("Verdana", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.ForeColor = SystemColors.Desktop;
-            textBox1.Location = new Point(453, 885);
+            textBox1.Location = new Point(453, 744);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Card Identifier";
             textBox1.ReadOnly = true;
@@ -126,11 +127,25 @@
             textBox1.TabIndex = 6;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
+            // exit_btn
+            // 
+            exit_btn.BackColor = Color.Transparent;
+            exit_btn.Font = new Font("Segoe UI Black", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exit_btn.ForeColor = Color.OrangeRed;
+            exit_btn.Location = new Point(775, 869);
+            exit_btn.Name = "exit_btn";
+            exit_btn.Size = new Size(369, 80);
+            exit_btn.TabIndex = 7;
+            exit_btn.Text = "EXIT";
+            exit_btn.UseVisualStyleBackColor = false;
+            exit_btn.Click += exit_btn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(18F, 45F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1922, 1179);
+            ClientSize = new Size(1894, 1009);
+            Controls.Add(exit_btn);
             Controls.Add(textBox1);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -139,6 +154,7 @@
             Controls.Add(button2);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
+            MinimumSize = new Size(1920, 1080);
             Name = "Form1";
             Text = "Card Identifier";
             ResumeLayout(false);
@@ -154,5 +170,6 @@
         private Button button5;
         private ImageList imageList1;
         private TextBox textBox1;
+        private Button exit_btn;
     }
 }

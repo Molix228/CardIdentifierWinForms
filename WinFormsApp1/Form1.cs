@@ -2,7 +2,8 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        public Form1() { 
+        public Form1()
+        {
             InitializeComponent();
             InitializeTextBox();
         }
@@ -13,7 +14,7 @@ namespace WinFormsApp1
         }
 
 
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = "Queen of Hearts";
@@ -39,6 +40,9 @@ namespace WinFormsApp1
             textBox1.Text = "Ace of Diamonds";
         }
 
-        
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
